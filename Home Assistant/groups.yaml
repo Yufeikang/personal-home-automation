@@ -1,0 +1,35 @@
+Television:
+  - media_player.Samsung_Smart_TV
+  - input_select.channel
+  - script.playpause
+  - script.record
+Squeezebox:
+  - media_player.softsqueeze
+  - media_player.one_m8
+
+Speedtest:
+  - sensor.speedtest_ping
+  - sensor.speedtest_download
+  - sensor.speedtest_upload
+
+
+Links:
+  - weblink.router
+
+# Default View
+default_view:
+  name: DEFAULT
+  icon: mdi:home
+  view: yes
+  entities:
+    - group.television
+    - group.squeezebox
+
+# Tabs
+Server:
+  name: Server
+  icon: mdi:server
+  view: yes
+  entities:
+    - group.speedtest
+    - group.links

@@ -1,0 +1,37 @@
+# Television
+media_player.Samsung_Smart_TV:
+  icon: mdi:television
+input_select.channel:
+  icon: mdi:television-guide
+script.playpause:
+  icon: mdi:play-pause
+  friendly_name: Play/Pause
+script.record:
+  icon: mdi:record-rec
+
+# Squeezeboxs
+media_player.softsqueeze:
+  icon: mdi:desktop-tower
+media_player.one_m8:
+  icon: mdi:cellphone
+  
+# Server
+sensor.speedtest_ping:
+  icon: mdi:speedometer
+  friendly_name: Ping
+sensor.speedtest_download:
+  icon: mdi:download
+  friendly_name: Download
+sensor.speedtest_upload:
+  icon: mdi:upload
+  friendly_name: Upload
+weblink.router:
+  icon: mdi:router-wireless
+  
+# Weather
+sensor.weather_apparent_temperature:
+  icon: mdi:thermometer
+  friendly_name: Temperature
+sensor.weather_summary:
+  icon: mdi:weather-partlycloudy
+  friendly_name: Weather

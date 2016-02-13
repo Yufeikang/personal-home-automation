@@ -1,0 +1,16 @@
+- platform: forecast
+  api_key: bbbdb10853e6eb639eed343f9bf44047
+  monitored_conditions:
+    - summary
+    - apparent_temperature
+
+- platform: speedtest
+  hour:
+    - 8
+    - 12
+    - 16
+    - 20
+  monitored_conditions:
+    - ping
+    - download
+    - upload

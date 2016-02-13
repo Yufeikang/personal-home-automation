@@ -1,0 +1,44 @@
+homeassistant:
+  name: Home
+  latitude: N/A
+  longitude: N/A
+  temperature_unit: C
+  time_zone: Europe/London
+  customize: !include customize.yaml
+  
+group: !include groups.yaml
+automation: !include automation.yaml
+
+media_player: !include devices/media_players.yaml
+switch: !include devices/switches.yaml
+sensor: !include devices/sensors.yaml
+camera: !include devices/cameras.yaml
+
+input_select:
+  channel:
+    name: Channel
+    options:
+      - BBC One
+      - BBC Two
+      - ITV
+      - Channel 4
+      - Sky 1
+    initial: BBC One
+    icon: mdi:television-guide
+
+weblink:
+  entities:
+    - name: Router
+      url: http://192.168.0.1
+
+shell_command: !include shell_commands.yaml
+script: !include scripts.yaml
+
+history:
+sun:
+logbook:
+conversation:
+updater:
+discovery:
+frontend:
+
