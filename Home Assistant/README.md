@@ -1,2 +1,2 @@
 # UI
-![UI](images/UI.png)
+![UI](images/UI.PNG)
