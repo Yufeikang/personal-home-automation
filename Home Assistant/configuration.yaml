@@ -1,5 +1,5 @@
 homeassistant:
-  name: Home
+  name: N/A
   latitude: N/A
   longitude: N/A
   temperature_unit: C
@@ -10,9 +10,8 @@ group: !include groups.yaml
 automation: !include automation.yaml
 
 media_player: !include devices/media_players.yaml
-switch: !include devices/switches.yaml
 sensor: !include devices/sensors.yaml
-camera: !include devices/cameras.yaml
+switch: !include devices/switches.yaml
 
 input_select:
   channel:
@@ -25,6 +24,14 @@ input_select:
       - Sky 1
     initial: BBC One
     icon: mdi:television-guide
+  station:
+    name: Station
+    options:
+      - BBC Radio Berkshire
+      - BBC Radio Two
+      - Heart
+    initial: BBC Radio Berkshire
+    icon: mdi:radio-tower
 
 weblink:
   entities:
@@ -34,11 +41,5 @@ weblink:
 shell_command: !include shell_commands.yaml
 script: !include scripts.yaml
 
-history:
-sun:
-logbook:
-conversation:
-updater:
-discovery:
 frontend:
 

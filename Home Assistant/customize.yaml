@@ -8,14 +8,20 @@ script.playpause:
   friendly_name: Play/Pause
 script.record:
   icon: mdi:record-rec
+# Squeezebox
+media_player.radio:
+  icon: mdi:radio
 
-# Squeezeboxs
-media_player.softsqueeze:
-  icon: mdi:desktop-tower
-media_player.one_m8:
-  icon: mdi:cellphone
-  
-# Server
+# Raspberry Pi
+switch.red:
+  icon: mdi:led-variant-on
+switch.green:
+  icon: mdi:led-variant-on
+switch.blue:
+  icon: mdi:led-variant-on
+sensor.light_level:
+  icon: mdi:brightness-7
+
 sensor.speedtest_ping:
   icon: mdi:speedometer
   friendly_name: Ping
@@ -27,11 +33,3 @@ sensor.speedtest_upload:
   friendly_name: Upload
 weblink.router:
   icon: mdi:router-wireless
-  
-# Weather
-sensor.weather_apparent_temperature:
-  icon: mdi:thermometer
-  friendly_name: Temperature
-sensor.weather_summary:
-  icon: mdi:weather-partlycloudy
-  friendly_name: Weather

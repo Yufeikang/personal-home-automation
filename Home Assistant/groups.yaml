@@ -1,18 +1,24 @@
 Television:
-  - media_player.Samsung_Smart_TV
+  - media_player.samsung_smart_tv
   - input_select.channel
   - script.playpause
   - script.record
 Squeezebox:
-  - media_player.softsqueeze
-  - media_player.one_m8
+  - media_player.radio
+Steam:
+  - sensor.steam_N/A
+  - sensor.steam_N/A
 
+LED:
+  - switch.red
+  - switch.green
+  - switch.blue
+Light Level:
+  - sensor.light_level
 Speedtest:
   - sensor.speedtest_ping
   - sensor.speedtest_download
   - sensor.speedtest_upload
-
-
 Links:
   - weblink.router
 
@@ -24,11 +30,14 @@ default_view:
   entities:
     - group.television
     - group.squeezebox
+    - group.steam
+    - group.led
+    - group.light_level
 
 # Tabs
-Server:
-  name: Server
-  icon: mdi:server
+raspberrypi:
+  name: Raspberry Pi
+  icon: mdi:raspberrypi
   view: yes
   entities:
     - group.speedtest

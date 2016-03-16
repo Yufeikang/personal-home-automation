@@ -1,0 +1,5 @@
+- platform: rpi_gpio
+  ports:
+    16: Red
+    20: Green
+    21: Blue

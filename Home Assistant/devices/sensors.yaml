@@ -1,9 +1,3 @@
-- platform: forecast
-  api_key: bbbdb10853e6eb639eed343f9bf44047
-  monitored_conditions:
-    - summary
-    - apparent_temperature
-
 - platform: speedtest
   hour:
     - 8
@@ -14,3 +8,13 @@
     - ping
     - download
     - upload
+
+- platform: steam_online
+  api_key: N/A
+  accounts:
+    - N/A
+    - N/A
+
+- platform: command_line
+  command: sudo python /home/pi/Desktop/LightLevel.py
+  name: Light Level
