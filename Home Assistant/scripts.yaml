@@ -1,7 +1,17 @@
-# Sky
+### SCRIPTS ###
+
+# Sky #
 record:
   sequence:
   - service: shell_command.record
 playpause:
   sequence:
   - service: shell_command.playpause
+# Battery #
+battery:
+  sequence:
+  - service: shell_command.battery
+# Octopus Monitors #
+monitors:
+  sequence:
+  - service: shell_command.monitors

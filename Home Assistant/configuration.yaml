@@ -1,45 +1,39 @@
+### CONFIGURATION ###
+
+## GENERAL ##
 homeassistant:
-  name: N/A
+  name: Stuff
   latitude: N/A
   longitude: N/A
   temperature_unit: C
   time_zone: Europe/London
   customize: !include customize.yaml
-  
+
+## INCLUDE ##
+# Devices #
+switch: !include devices/switches.yaml
+sensor: !include devices/sensors.yaml
+media_player: !include devices/media_players.yaml
+camera: !include devices/cameras.yaml
+# Inputs #
+input_select: !include inputs/input_select.yaml
+input_slider: !include inputs/input_slider.yaml
+# Web Links #
+weblink: !include web_links.yaml
+# Shell Commands #
+shell_command: !include shell_commands.yaml
+# Scripts #
+script: !include scripts.yaml
+# Groups #
 group: !include groups.yaml
+# Automation #
 automation: !include automation.yaml
 
-media_player: !include devices/media_players.yaml
-sensor: !include devices/sensors.yaml
-switch: !include devices/switches.yaml
+## Bart's Pokemon Platform ##
+pokemon:
+  playername: GreenTurtwig
+  enemyname: Bart274
 
-input_select:
-  channel:
-    name: Channel
-    options:
-      - BBC One
-      - BBC Two
-      - ITV
-      - Channel 4
-      - Sky 1
-    initial: BBC One
-    icon: mdi:television-guide
-  station:
-    name: Station
-    options:
-      - BBC Radio Berkshire
-      - BBC Radio Two
-      - Heart
-    initial: BBC Radio Berkshire
-    icon: mdi:radio-tower
-
-weblink:
-  entities:
-    - name: Router
-      url: http://192.168.0.1
-
-shell_command: !include shell_commands.yaml
-script: !include scripts.yaml
-
+## ACTIVATE ##
+history:
 frontend:
-

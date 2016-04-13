@@ -1,5 +1,29 @@
+### SWITCHES ###
+
+# Raspberry Pi 3 LEDs #
 - platform: rpi_gpio
   ports:
     16: Red
     20: Green
     21: Blue
+# WOL #
+- platform: wake_on_lan
+  mac_address: "00:0F:54:0A:03:6D"
+  name: "Octopus"
+  host: "192.168.0.16"
+- platform: wake_on_lan
+  mac_address: "00:00:00:00:00:00"
+  name: "Shark"
+  host: "192.168.0.0"
+- platform: wake_on_lan
+  mac_address: "90:00:4E:49:41:3F"
+  name: "Walrus"
+  host: "192.168.0.20"
+- platform: wake_on_lan
+  mac_address: "00:00:00:00:00:00"
+  name: "Raspberry Pi"
+  host: "192.168.0.0"
+- platform: wake_on_lan
+  mac_address: "B8:27:EB:FE:6D:81"
+  name: "Raspberry Pi 3"
+  host: "127.0.0.1"

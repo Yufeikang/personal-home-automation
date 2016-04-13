@@ -1,3 +1,6 @@
+### AUTOMATION ###
+
+# Sky #
 - alias: 'BBC One'
   trigger:
     - platform: state
@@ -33,3 +36,36 @@
       state: 'Sky 1'
   action:
     service: shell_command.sky1
+# Player Online
+- alias: 'Player Online'
+  trigger:
+    - platform: state
+      entity_id: sensor.pickcraft
+      state: '1/15'
+  action:
+    service: switch.turn_on
+    entity_id: switch.green
+- alias: 'Player Online'
+  trigger:
+    - platform: state
+      entity_id: sensor.pickcraft
+      state: '2/15'
+  action:
+    service: switch.turn_on
+    entity_id: switch.green
+- alias: 'Player Online'
+  trigger:
+    - platform: state
+      entity_id: sensor.pickcraft
+      state: '3/15'
+  action:
+    service: switch.turn_on
+    entity_id: switch.green
+- alias: 'Player Online'
+  trigger:
+    - platform: state
+      entity_id: sensor.pickcraft
+      state: '0/15'
+  action:
+    service: switch.turn_off
+    entity_id: switch.green

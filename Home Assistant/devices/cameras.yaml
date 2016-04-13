@@ -1,0 +1,5 @@
+### CAMERAS ###
+
+- platform: generic
+  still_image_url: http://62.255.244.49/0026.jpg
+  name: London Road

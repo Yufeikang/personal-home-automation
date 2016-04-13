@@ -1,3 +1,17 @@
+### SENSORS ###
+
+- platform: steam_online
+  api_key: N/A
+  accounts:
+    - 76561198096271642
+    - N/A
+- platform: command_line
+  command: sudo python /home/pi/Desktop/LightLevel.py
+  name: Light Level
+  unit_of_measurement: " "
+- platform: minecraft
+  server: 192.168.0.20
+  name: PickCraft
 - platform: speedtest
   hour:
     - 8
@@ -8,13 +22,3 @@
     - ping
     - download
     - upload
-
-- platform: steam_online
-  api_key: N/A
-  accounts:
-    - N/A
-    - N/A
-
-- platform: command_line
-  command: sudo python /home/pi/Desktop/LightLevel.py
-  name: Light Level
