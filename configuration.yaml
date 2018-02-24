@@ -1,0 +1,36 @@
+homeassistant:
+  name: Home
+  latitude: !secret latitude
+  longitude: !secret longitude
+  elevation: !secret elevation
+  unit_system: metric
+  time_zone: Europe/London
+  customize: !include other/customise.yaml
+
+frontend:
+config:
+hassio:
+
+alexa: !include other/alexa.yaml
+
+http:
+  api_password: !secret password
+
+
+hive:
+  username: !secret hiveEmail
+  password: !secret hivePassword
+
+ring:
+  username: !secret ringEmail
+  password: !secret ringPassword
+
+
+media_player: !include devices/media_player.yaml
+light: !include devices/light.yaml
+switch: !include devices/switch.yaml
+sensor: !include devices/sensor.yaml
+binary_sensor: !include devices/binary_sensor.yaml
+
+group: !include other/group.yaml
+automation: !include other/automation.yaml

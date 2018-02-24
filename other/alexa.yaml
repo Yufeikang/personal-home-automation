@@ -1,0 +1,15 @@
+smart_home:
+  filter:
+    exclude_domains:
+      - group
+      - automation
+  entity_config:
+    media_player.kitchen_radio:
+      name: Radio
+      display_categories: SPEAKER
+    media_player.samsung_smart_tv:
+      name: Living Room TV
+      display_categories: TV
+    media_player.living_room:
+      name: Sonos
+      display_categories: SPEAKER

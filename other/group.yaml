@@ -1,0 +1,29 @@
+default_view:
+  view: yes
+  entities:
+    - group.bedroom
+    - group.kitchen
+    - group.living_room
+    - group.doorbell
+    - group.heating
+
+
+Bedroom:
+  - light.desk_leds
+
+Kitchen:
+  - binary_sensor.back_door
+  - media_player.kitchen_radio
+
+Living Room:
+  - media_player.samsung_smart_tv
+  - media_player.living_room
+
+Doorbell:
+  - sensor.ring_front_door_last_motion
+  - binary_sensor.ring_front_door_ding
+  - binary_sensor.ring_front_door_motion
+
+Heating:
+  - climate.heating
+  - climate.hot_water

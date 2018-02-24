@@ -1,0 +1,10 @@
+- platform: samsungtv
+  host: 192.168.0.3
+  name: Samsung Smart TV
+
+- platform: ue_smart_radio
+  username: !secret ueSmartRadioEmail
+  password: !secret ueSmartRadioPassword
+
+- platform: sonos
+  hosts: 192.168.0.16

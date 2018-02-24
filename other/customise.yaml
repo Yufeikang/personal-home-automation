@@ -1,0 +1,20 @@
+automation.all_automations:
+  hide_entity: True
+
+light.desk_leds:
+  icon: mdi:led-strip
+
+climate.hot_water:
+  icon: mdi:water
+
+media_player.samsung_smart_tv:
+  icon: mdi:television
+media_player.living_room:
+  icon: mdi:speaker
+  friendly_name: Sonos
+  entity_picture: None
+
+binary_sensor.back_door:
+  device_class: door
+binary_sensor.ring_front_door_ding:
+  device_class: None
